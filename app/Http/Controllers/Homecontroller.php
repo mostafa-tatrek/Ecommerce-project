@@ -10,14 +10,21 @@ use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
 
 class Homecontroller extends Controller
 {
+    public function index()
+    {
+
+      return view('home.userpage');
+
+    }
+    
     public function redirect()
     {
 
         $usertype= Auth::user()->usertype;
         if($usertype=='1'){
-           return view('admin.home');}
+           return view('admin.admindash');}
            else{
-            return view ('Dashboard');
+            return view ('home.userpage');
 
 
            }
