@@ -28,6 +28,9 @@ route::get('/show_prodact',[AdminController::class,'/show_prodact']);
 route::get('/update_prodact/{id}',[AdminController::class,'/update_prodact']);
 route::get('/delete_prodact/{id}',[AdminController::class,'/delete_prodact']);
 route::post ('/upate_prodact_confirm/{id}',[AdminController::class,'/upate_prodact_confirm']);
+route::get('/prodact_details/{id}',[HomeController::class,'/prodact_details']);
+route::post('/add_card/{id}',[HomeController::class,'/add_card']);
+
 
 
 
